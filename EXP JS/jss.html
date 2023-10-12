@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HELLO WORLD</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // KOMENTAR SATU BARIS
+      document.writeln("<p>HELLO WORLD</p>");
+      document.writeln("<p>BELAJAR JAVA SCRIPT</p>");
+      /* KOMENTAR BEBAS 
+	BELAJAR TIPE DATA NUMBER KALAU DI JS TANDA KOMA , SAMA DENGAN . TITIK */
+      document.writeln(100.2);
+      document.writeln("</br>");
+      document.writeln(1.2);
+      document.writeln("</br>");
+      /* BELAJAR NUMBER NOTATION 
+	Hexadecimal di awali 0xFF
+	Binary 0b
+	Octal 0o */
+      document.writeln("CONTOH BINARY");
+      document.writeln(0b101111010);
+      /* TIPE DATA BOOLEAN ADALAH TIPE DATA YANG HANYA BERISI BENAR ATAU SALAH TRUE OR FALSE */
+      document.writeln("</br>");
+      document.writeln(true); // benar
+      document.writeln("</br>");
+      document.writeln(false); // salah
+      document.writeln("</br>");
+      /* TIPE DATA STRING ADALAH DATA YANG BERISIKAN KUMPULAM KOSONG ATAU LEBIH KARAKTER ATAU TEXT . CONTOHNYA TEXT HELLO WORLD. WAJIB MENGGUNAKAN PETIK DUA " " SEBELUM DAN SETELAH ISI TEXT */
+      document.writeln("<P>CONTOH TIPE DATA STRING</P>");
+      document.writeln("<p>ARDYA PUSAKA</p>");
+      document.writeln("<p>KIZARU ZERO</p>");
+      /* MENAMBAH STRING / GABUNG BISA MENGGUNAKAN TANDA + (PLUS) */
+      document.writeln("NAMA :" + "ARDYA PUSAKA");
+      document.writeln("</BR>");
+      document.writeln("ANONIM :" + "KIZARU ZERO");
+      /* ESCAPE SEQUENCE 
+	\n = enter
+	\t = tab 
+	\'= ' petik satu
+	\"= " petik dua
+	\\= \ */
+      document.writeln("<textarea cols='100' rows='10'>");
+      document.writeln("ARDYA PUSAKA");
+      document.writeln("KIZARU ZERO");
+      document.writeln("BELAJAR JAVA SCRIPT");
+      document.writeln("</textarea>");
+      // PERBEDAAN WRITELN DAN WRITE
+      document.writeln("<textarea cols='100' rows='10'>");
+      document.write("ARDYA PUSAKA\n");
+      document.write("\\KIZARU\\ 'ZERO'\n");
+      document.write('BELAJAR JAVA "SCRIPT"');
+      document.writeln("</textarea>");
+      document.writeln("</br>");
+      /* kode variabel untuk memudahkan jika kita harus mengganti sesuatu yang sama misalnya nama,kalau mau merubah tinggal rubah di variabelnya */
+      var fullName = "ARDYA" + "" + "ZERO";
+      var firstName = "ARDYA";
+      var lastName = "ZERO";
+      document.writeln(firstName);
+      document.writeln("</br>");
+      document.writeln(lastName);
+      document.writeln("</br>");
+      document.writeln(fullName);
+      document.writeln("</br>");
+      var fullName1 = "ZERO TWO";
+      var firstName1 = "ZERO";
+      var lastName1 = "TWO";
+      document.writeln(firstName1);
+      document.writeln("</br>");
+      document.writeln(lastName1);
+      document.writeln("</br>");
+      document.writeln(fullName1);
+      document.writeln("</br>");
+      /* var sekarang tidak di rekomendasikan diganti dengan let dan const.sekilas emang ga ada perbedaan */
+      document.writeln("CONTOH PENGGUNAAN LET");
+      document.writeln("</br>");
+      let fullName2 = "ZERO KIZARU";
+      let firstName2 = "ZERO";
+      let lastName2 = "KIZARU";
+      document.writeln(firstName2);
+      document.writeln("</br>");
+      document.writeln(lastName2);
+      document.writeln("</br>");
+      document.writeln(fullName2);
+      document.writeln("</br>");
+      // const. kalau menggunakan const tidak bisa diganti lagi
+      const application = "BELAJAR JAVA SCRIPT";
+      document.writeln(application);
+      /* OPERATOR MTK
+	+ TAMBAH, - PENGURANGAN, * PERKALIAN, ** EXPONENSIAL(PANGKAT), / PEMBAGIAN, % SISA BAGI */
+      document.writeln("</BR>");
+      let result = 1 + 2; // 3
+      document.writeln("<p>1+2=" + result + "</p>");
+      let originalResult = result; // 3
+      result = result - 1;
+      document.writeln("<p>" + originalResult + "-1=" + result + "</p>");
+      originalResult = result;
+      result = result * 2;
+      document.writeln("<P>" + originalResult + "*2=" + result + "</P>");
+      /* OPERATOR AUGMENTED ASSIGNMENTS UNTUK MEMPERSINGKAT KODING MTK JIKA MENGHITUNG VARIABEL SENDIRI/ RESULT=RESULT 
+	CONTOH 
+    result=result +10 menjadi result+=10
+    result=result*10 menjadi result*=10
+    dan seterusnya */
+      let hasil = 5 + 5;
+      document.writeln("<p>5+5=" + hasil + "</p>");
+      let originalHasil = hasil;
+      hasil *= 10;
+      document.writeln("<p>" + originalHasil + "*10=" + hasil + "</p>");
+      originalHasil = hasil;
+      hasil /= 5;
+      document.writeln("<p>" + originalHasil + "/5=" + hasil + "</p>");
+      /* OPERATOR UNARY 
+    + MENANDAKAN POSITIF , - NEGATIF, ++ NAIK 1 ANGKA, -- TURUN 1 ANGKA.. UNTUK + TIDAK PENTING KARENA DEFAULT NYA UDH PLUS */
+      document.writeln("<P>CONTOH OPERATOR UNARY</P>");
+      let hasil1 = +1; // bisa jga let hasil1=1
+      document.writeln("<p>" + hasil1 + "</p>");
+      hasil1--; // sama aja result-=1
+      document.writeln("<p>" + hasil1 + "</p>");
+      hasil1++; // sama aja hasil1=+1
+      document.writeln("<p>" + hasil1 + "</p>");
+      hasil1 = -hasil1; // ubah jadi minus
+      document.writeln("<p>" + hasil1 + "</p>");
+      /* OPERASI PERBANDINGAN . HASILNYA BENAR ATAU SALAH/ BOOLEAN. 
+    > LEBIH DARI
+    < KURANG DARI
+    >= LEBIH DARI SAMA DENGAN
+    <= KURANG DARI SAMA DENGAN
+    == SAMA DENGAN
+    === SAMA DENGAN DAN SAMA TIPE
+    != TIDAK SAMA DENGAN
+    !== TIDAK SAMA DENGAN ATAU TIDAK SAMA TIPE */
+      document.writeln("<P>CONTOH PERBANDINGAN</P>");
+      let hasil2 = 10 == "10";
+      document.writeln(
+        "<p>" + hasil2 + "</p>"
+      ); /* hasilnya true wlpn menggunakan string karena pakai == ,kalau pakai === hasilnya bakal false */
+      hasil2 = 10 === "10"; // kalau pakai === harus sama tipe
+      document.writeln("<p>" + hasil2 + "</p>");
+      let hasil3 = 10 * 10 <= 100;
+      document.writeln("<p>" + hasil3 + "</p>");
+      hasil3 = 10 * 10 > 50;
+      document.writeln("<p>" + hasil3 + "</p>");
+      /* OPERATOR LOGIKA ADALAH OPERATOR DUA DATA BOOELAN HASILNYA ADALAH BOOLEAN LAGI ( HANYA TRUE ATAU FALSE) 
+    && = DAN  ||=ATAU !=KEBALIKAN
+    UNTUK OPERATOR && JIKA DI SALAH SATU NILAI ADA FALSE MAKA HASILNYA PASTI FALSE MISAL NILAI 1=TRUE && NILAI 2=FALSE HASILNYA FALSE.
+    UNTUK OPERATOR|| JIKA SALAH SATU ADA TRUE MAKA HASILNYA TTP TRUE,HASILNYA FALSE JIKA SEMUANYA FALSE.
+    UNTUK OPERATOR ! (KEBALIKAN) SEPERTI NAMANYA JIKA NILAI TRUE HASILNYA AKAN FALSE*/
+      document.writeln("<P>CONTOH OPERATOR LOGIKA</P>");
+      const nilaiUjian = 90;
+      const nilaiAbsensi = 70;
+
+      const lulusUjian = nilaiUjian > 75;
+      const lulusAbsensi = nilaiAbsensi > 75;
+
+      const lulus = lulusUjian && lulusAbsensi;
+      document.writeln(
+        "<p>" + lulus + "</p>"
+      ); /* jawaban false karena jawaban salah satu ada yang false/tidak lulus dan karena menggunakan && */
+      /* console adalah fitur untuk memberikan informasi tanpa mengganggu user alias tidak di tampilkan,hanya muncul jika di inspect elemen>console
+    console.info() memberitahu informasi
+    console.warn()memberi tahu informasi peringatan
+    console.error() memberitahu informasi eror
+    console.table() memberi tahu informasi dalam bentuk table */
+      console.info("Helllo World");
+      console.warn("Peringatan");
+      console.error("Error");
+      /* STRING TEMPLATE. KALAU BIASANYA KITA MENGGUNAKAN TANDA + UNTUK MENAMBAHKAN STRING DENGAN DATA LAIN SPRTI VARIABEL /MTK LEBIH MUDAH K=JIKA KITA MENGGUNAKAN TANDA ``(BACKTICK) BUKAN PETIK */
+      document.writeln("<P>CONTOH STRING TEMPLATE</P>");
+      const name = "ARDYA ZERO";
+      const firstName5 = "ARDYA";
+      const lastName5 = "ZERO";
+      const template = `Nama : ${name}`;
+      const temp1 = `Nama : ${firstName5} ${lastName5}`; // simple
+      const nilai = 90;
+      document.writeln(template);
+      document.writeln("</br>");
+      document.writeln(temp1);
+      console.info(temp1);
+      document.writeln("</br>");
+      const template2 = `Name : ${name}, Lulus : ${nilai > 80}`;
+      console.info(template2);
+      document.writeln(template2);
+      /* selain subtitusi sprti diatas bisa juga multiline string ,kita cukup tambahkan enter di text nya,programer zaman now menit 1:56*/
+      const multiline = `Nama saya Zero,
+saya hobi ngooopi,
+sehari hari kerjaan cuman tidur ngabisin beras ajg`;
+      document.writeln("</br>");
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("</pre>");
+      /* KONVERSI STRIG=NG DAN NUMBER,SAAT MEMBUAT APLIKASI KADANG KITA INPUT DARI PENGGUNA SELALU DALAM BENTUK STRING PADAHAL KITA INGIN MENGELOLA DATANYA DALAM BENTUK NUMBER,MAKA SANGAT DISARANKAN UNTUK MELAKUKAN KONVERSI DATA */
+      document.writeln("<P>CONTOH PERMASALAHAN</P>");
+      const value1 = "1"; // anggap saja ini input dari user (bentuk string)
+      const value2 = 1;
+      const sum = value1 + value2; // harapannya hasilnya 2 dan lihat apa yang akan terjadi
+      document.writeln(sum); // hssilnya bener karena itu berbentuk string jadi di anggapnya string bukan sebuah operasi mtk
+      /* KONVERSI STRING DAN NUMBER
+    parseInt(string) = mengkonversi dari string ke number bilangan bulat
+    parseFloat(string) = ke number bilangan pecahan
+    Number(string) = bilangan bulat / pecahan 
+    number.toString() = mengkonversu daru number ke string progzamannow 2.03*/
+      document.writeln("<p>Mencoba memperbaiki</p>");
+      const value3 = parseInt("1");
+      const value4 = 1;
+      const summ = value3 + value4;
+      document.writeln(summ);
+      document.writeln(`<p>${parseInt("1.2")}</p>`); // hasil 1 karena hsilnya wajib bilangan bulat
+      document.writeln(`<p>${parseFloat("1.2")}</p>`);
+      document.writeln(`<p>${Number("1.2")}</p>`);
+      const a = 1;
+      const b = 2;
+      const total = a.toString() + b.toString();
+      document.writeln(total); // hasilnya 1 dan 2 atau 12 karena dikonversi ke string menit 2.06
+      /* NaN(  not a number ) adalah number spesial yang menyebutkan bahwa ini bukanlah sebuah number atau bukanlah sebuah data yang valid,jika NaN dioperasikan dengan data number lainnya,maka hasilnya akan menjadi NaN lagi,jka data strig yang akan kita konversi bukanlah data valid maka hasil dari konversi tersebut adalah NaN */
+      document.writeln(`<p>${parseInt("salah")}</p>`); // hasil NaN KARENA BUKAN NUMBER
+      document.writeln(`<p>${parseInt("12salah")}</p>`); //Hasil 12 karena yang bukan number (huruf) ditoleransi oleh javascript atau tidak dianggap,tapi kalau hurufnya didepan angga tidak ditoleransi seperti contoh dibawah
+      document.writeln(`<p>${parseInt("As123")}</p>`); // hasilnya NaN karena ada huruf didepan angka. sedangkan kalau pakai perintah number tidak mentolerir kesalahan apapun
+      document.writeln(`<p>${Number("12SA")}</p>`); // hasilnya bakal tetap nan selama ada huruf didalam string
+      /* kode operasi pada NaN,jika NaN dioperasikan dengan data apapun hasilnya akan tetap NaN */
+      const valun1 = Number("salah");
+      const valun2 = 120;
+      const sum1 = valun1 + valun2;
+      document.writeln(`<p>${sum1}</p>`); // hasilnya bakal tetap nan karena sudah ada nan di valun1
+      const valun3 = parseInt("12int");
+      const valun4 = 100;
+      const sum2 = valun3 + valun4;
+      document.writeln(`<p>${sum2}</p>`); // hasilnya bukan nan karena pada valun3 hasilnya bukan NaN
+      /* isNaN() function adalah kode yang digunakan untuk mengecek sebuah number itu NaN atau bukan,untuk melakukan pengecekan tersebut kita bisa menggunakan function isNaN(number) hasilnya akan berupa data boolean yaitu hanya TRUE(if NaN) DAN FALSE(if bukan NaN) */
+      document.writeln(`<p>${isNaN(valun1)}</p>`); // hasilnya true karena valun1 merupakan NaN
+      document.writeln(`<p>${isNaN(valun3)}</p>`); // HASILNYA FALSE KARENA valun3 bukanlah sebuah NaN
+      /* tipe data Array adalah sebuah tipe data yang berisikan kumpulan data. Array di JavaScript memilikui sifat dinamis artinya datanya bisa bertambah dengan sendirinya saat kita memasukan data ke dalam Array.jika ingin menambahkan data lebih dari satu cukup gunakan koma.
+    Cara kerja Array = setiap data di array dsiimpan dalam posisi berurutan dimana urutan pertama dimulai dari nomor 0,setiap kita menambah data ke array otomatis data akan disimoan ke urutan terakhir. urutan di array kita sebut dengan index  menit 2.13 */
+      let arrayKosong = [];
+      let arrayNama = ["Ardya", "Zero", "Kizaru"];
+      document.writeln(`<p>${arrayNama}</p>`);
+      const arrayNames = [];
+      arrayNames.push("ARDYA"); // ARDYA adalah data ke 0
+      arrayNames.push("KIZARU", "ZERO", "021"); // Kizaru adalah data ke 1 zero adalah data ke 2,jadi bisa sekaligus menambahkan beberaa data ke dalam array dalam satu perintah
+      arrayNames[2] = "KING"; // ini mengubah indexs 2 yaitu zero menjadi king. untuk perintahnya harus diatas docwriteline biar berubah
+      delete arrayNames[3]; // ini untuk menghapus indexs ke 3 tapi untuk length tetap 4 artinya tidak berubah.
+      console.table(arrayNames); // untuk memunculkan info di konsol berbentuk table
+      document.writeln(`<p>${arrayNames}</p>`);
+      /* operasi di Array 
+    array.push(value) digunakan untuk menambah data ke array sprti diatas
+    array.length untuk mendapatkan panjang Array
+    array[index] untuk mendapat data di posisi index
+    array[index] = value   mengubah data posisi index
+    delete array[index] menghapus data diposisi index namun index tidak bergeser.menit 2.24
+    PERLU DI INGAT DALAM ARRAY TIDAK ADA BATASAN HARUS DATA APA JADI KITA BISA MEMASUKAN DATA APAPUN DALAM DATA ARRAY MENIT 2.30*/
+      /* TIPE DATA OBJECT (2.32) JIKA KITA MEMASUKAN DATA BUKAN NUMBER DI INDEX ARRAY MAKA JS AKAN MEMASUKAN TIPE DATA ARRAY TERSEBUT MENJADI OBJECT,DAN INI BISA BERBAHAYA KARENA BEBERAPA OPERASI ARRAY MUNGKIN BISA MERUBAH HASILNYA
+    TIPE DATA OBJECT ADALAH TIPE DATA YANG MIRIP DENGAN TIPE DATA ARRAY. YANG MEMBEDAKAN ADALAH INDEX PADA TIPE DATA  OBJECT =BISA MENGGUNAKAN STRING.INDEX DIOBJECT BIASANYA DISEBUT ATTRITBUTES ATAU PROPERTIES,BUKAN INDEX.KALAU ARRAY KITA MENGGUNAKAN[] SEDANGKAN OBJECT MENGGUNAKAN {}. */
+      const person = {}; // contoh object kosong
+      // MENAMBAH ATAU MENGUBAH
+      person["Nama"] = "ARDYA ZERO";
+      person["Alamat"] = "JEPANG";
+      person["Umur"] = "18";
+      // mencoba menghapus
+      delete person["Umur"]; //mirip dengan arrary untuk operasinya
+      console.table(person); // perbedaannya bisa dilihat dihasilnya/console,kalau array indexnya psti number(yang dimulai dari 0) sedangkan tipe data object indexnya bisa bebas/string seperti alamat nama dll
+      // membuat object secara langsung/tanpa object kosong
+      const orang = {
+        Nama: "Kizaru Zero",
+        Alamat: "Jepang",
+        Umur: "18",
+        "Favorit Anime": "Code Geass", // petik 2 digunakan ketika index ada 2/lebih kata
+      };
+      console.table(orang);
+      // kode mengakses property object
+      console.info(`Nama : ${orang.Nama}`);
+      console.info(`Alamat : ${orang.Alamat}`);
+      console.info(`Umur : ${orang.Umur}`);
+      console.info(`Favorit Anime : ${orang["Favorit Anime"]}`); // jika lebih dari 1 kata
+      /* If Expression/Percabangan [2.43]. dalam javascript If adalah salah satu kata kunci yang digunakan untuk percabangan.percabangan artinya kita bisa mengekekusi kode program tertentu ketika kondisi terpenuhi[tipe data boolean,jika true bisa dieksekusi dan jika false tidak bisa dieksekusi].hampir di semua bahasa pemrograman mendukung If Expression.*/
+      // contoh if expression
+      const examValue = 90;
+      if (examValue > 80) {
+        document.writeln("<p>Sangat Bagus</p>");
+      } // nilainya wajib true jika tidak true maka tidak akan dieksekusi
+      /* Else expression.blok if akan dieksekusi ketika kondisi if bernilai true,kadang kita ingin melakukan eksekusi program tertentu jika kondisi if bernilai false,hal ini bisa dilakukan menggunakan else expression. */
+      const ExamValue1 = 85;
+      if (ExamValue1 > 90) {
+        document.writeln("<p>Good Job</p>");
+      } else {
+        document.writeln("<p>Try Again Next Year</p>");
+      }
+      // else if expression. kadang dalam if kita butuh membuat beberapa kondisi.kasus seperti ini di java script bisa menggunakan else if expression.
+      const ujian = 65;
+      if (ujian > 80) {
+        document.writeln("<p>Good Job</p>");
+      } else if (ujian > 70) {
+        document.writeln("<p>Not Bad</p>");
+      } else {
+        document.writeln("<p>Goblok</p>");
+      }
+      /* Pop up = Alert prompt dan confirm [2.55]. Javascript memiliki fitur yang bernama alert promp dan confirm.
+    Alert digunakan untuk memberi peringatan berypa popup text di browser.
+    promp digunakan untuk meminta input strung dari pengguna browser dalam bentuk popup input text.
+    Sedangkan confirm digunakan untuk meminta input boolean dari pengguna browser dalam bentuk popup input pilihan. */
+      // alert("Hello Mtfkr belajar yg rajin blok") contoh penggunaan alert,simple.
+      //const names = prompt("Siapa Nama Anda?")
+      //alert(`Hello ${names}. Have a nice day!!`) hanya bisa satu pop up
+      const masuk = confirm("Anda yakin mau masuk?");
+      if (masuk) {
+        const namess = prompt("Siapa Nama Anda?");
+        alert(`Hello ${namess}.Have a Nice Day!!`);
+      } else {
+        const namesss = prompt("Alasan tidak mau masuk?");
+        alert(
+          `Okeyy karena ${namesss} kamu tidak mau masuk,kalau begitu selamat tinggal.Have a Nice Day!`
+        );
+      }
+      /* UNDEFINED. Undifined adalah sebuah kata kunci di javascript.undifined adalah sebuah tipe data,sebuah variable yang belum ditambahkan nilai,maka artinya variable tersebut merupakan tipe undifined.kadang untuk programmer JavaScript pemula undifined ini memang agak sedikit membingungkan.undifined itu berbeda dengan null di bahasa pemograman lain. */
+      /*let namaa
+    if(namaa === undefined) {
+        alert("UNDEFINED")
+    } else {
+        alert("DEFINED")
+    } */
+      // kode undefined array value
+      const jeneng = ["Ardya", "Kizaru", "Zero"];
+      if (jeneng[2] === undefined) {
+        alert("Hello Mtfkr");
+      } else {
+        alert(`Hello ${jeneng[2]} semoga harimu menyenangkan!`);
+      } // hasilnya ada karena index ke 2 memang ada [zero] misal tidak ada ya hasilnya undefiened
+      const orangg = {
+        umur: "18",
+      };
+      if (orangg.name === undefined) {
+        alert("OBJECT UNDEFINED");
+      } else {
+        alert("OBJECT DEFINED");
+      }
+      if (orangg.umur === undefined) {
+        alert("Hello Tua");
+      } else {
+        alert(`Hello ${orangg.umur} tua whehehewh`);
+      } // membuktikan sahajaaa
+      /* Null (3.11).Null merupakan representasi data kosong.Null berbeda dengan undefined,null berarti variable sudah ditambahkan valuenya,hanya saja valuenya null.sedangkan undefined adalah variable yang belum ditambhakan value apapun. */
+      let nama1 = null; //jika di isi nama maka hasilnya nama,jika tidak di isi hasilnya undefined
+      if (nama1 === undefined) {
+        a;
+        ert("undefined");
+      } else if (nama1 === null) {
+        alert("null");
+      } else {
+        alert(nama1);
+      }
+      /* Switch Expression (3.15).switch statement,kadang kita hanya butuh menggunakan kondisi sederhana di if statement,seperti hanya menggunakan perbandingan ==
+    switch adalah statement percabangan yang sama dengan if,namun lebih sederhana cara pembuatannya.kondisi di switch statement hanya untuk perbandingan == */
+      const nilaiulangan = "E";
+      switch (nilaiulangan) {
+        case "A":
+          document.writeln("<p>Anda lulus dengan baik</p>");
+          break;
+        case "B":
+        case "C":
+          document.writeln("<p>Anda lulus</P>");
+          break;
+        case "D":
+          document.writeln("<P>Anda tidak lulus</P>");
+          break;
+        default:
+          document.writeln("<P>ANDA GOBLOK</P>");
+      }
+      /* OPERATOR TYPEOF (3.20).Typeoff merupakanoperatir yang bisa kita gunakan untuk melihat tipe data sebuah value atau variable.Karena JavaScript merupakan dynamic language,jadi kita kadang perlu mengecek tipe data sebuah value atau variable menggunakan operator typeoff.Hasil dari operator typeof adalah string type datanya. 
+    TYPE = HASIL OPERATOR TYPEOF
+    Undefined = "undefined"
+    Null = "object"
+    Boolean = "boolean"
+    Number = "number"
+    Bitlnt = "bigint"
+    String = "string"
+    Symbol = "symbol"
+    Function = "function"
+    Lainnya = "object" */
+      let data = 21;
+      const typeData = typeof data;
+      document.writeln(`<p>${typeData}</p>`); // hasilnya number karena ya number,kalau di kasih string (" ") hasilnya string,kalau tidak di isi hasilnya undefined,kalau true/false hasilnya boolean.
+      /* OPERATOR IN (3.25). In operator adalah operator yang bisa dilakukan untuk mengecek apakah sebuah property ada didalam object atau tidak.jika property ada di object,maka hasilnya true,sedangkan jika tidak maka hasilnya akan false.Tidak hanya di object,In juga bisa digunakan untuk mengecek Index di Array. */
+      const orang1 = {
+        namaawal: "Ardya",
+        namaakhir: "Zero",
+        namatengah: undefined,
+      };
+      const result5 = "namaawal" in orang1; // hasilnya true karena di prang1 ada nama awal
+      document.writeln(`<p>${result5}</p>`);
+      const result4 = "namaaaaa" in orang1; // hasilnya false karena tidak ada
+      document.writeln(`<p>${result4}</p>`);
+      const result3 = "namatengah" in orang1;
+      document.writeln(`<p>${result3}</p>`); // hasilnya tetap true walaupun isinya undefined.
+      // bisa juga pakai if
+      if ("namaakhir" in orang1) {
+        document.writeln(
+          `<p>Hello ${orang1.namaakhir} semoga harimu menyenangkan</p>`
+        );
+      } else {
+        document.writeln("Goodbye"); // jika tidak ada maka hasilnya akan goodbye
+      }
+      /* PERINGATAN.IN OPERATOR HANYA AKAN MENGECEK APAKAH SEBUAH PROPERTY ATAU INDEX ADA ATAU TIDAK,JADI WALAUPUN NILAI PROPERTY ATAU INDEXNYA UNDEFINED ATAU NULL,MAKA AKAN TETAP DIANGGAP ADA*/
+      /* TERNARY OPERATOR. Ternary operator adalah operator sederhana dari if statement.ternary operator terdiri dari lpndisi yang dievaluasi,jika menghasilkan true maka nilai pertama akan diambil,jika false maka nilai kedua akan diambil. */
+      // contoh perbedaan penggunakan if else biasa dan ternary operator
+      // contoh kasus if else
+      const nilaiakhir = 75;
+      let ucapan;
+      if (nilaiakhir >= 75) {
+        ucapan = "Selamat anda lulus";
+      } else {
+        ucapan = "Anda tidak lulus";
+      }
+      document.writeln(`<p>${ucapan}</p>`);
+      // contoh menggunakan ternary operator,lebih simple
+      const nilaiawal = 60;
+      const ucapan1 =
+        nilaiawal >= 75 ? "Selamat anda lulus" : "Silahkan coba lagi";
+      document.writeln(`<p>${ucapan1}</p>`);
+      /* Nullish coalescing operator(3.36).Nullish value adalah null dan undefined.nullish coalescing operator (??) adalah operator yang mirip dengan ternary operator.yang membedakan adalah pada kondisi,jika bernilai null atau undefined,baru value defaultnya diambil. */
+      let parameter = "Eko"; // jika eko dihilangkan maka hasilnya nilai default
+      let data1 = parameter;
+      if (data1 === undefined || data1 == null) {
+        data1 = "Nilai Default";
+      } // artinya jika di parameter tidak ada isinya/kosong/undefined/null maka hasilnya akan diubah menjadi "Nilai Default"
+      else {
+        data1 = `Hello ${parameter}`;
+      }
+      document.writeln(`<p>${data1}</p>`); // hasilnya nilai default karena di paramter tidak ada isinya,hasilnya else karena di parameter ada isinya/bukan null/undefined
+      // cARA CEPAT DAN SIMPLE DENGAN Nullish coalescing operator.
+      let parameter1;
+      data2 = parameter1 ?? "Nilai Default";
+      document.writeln(`<p>${data2}</p>`); //hasil nilai default karena tidak ada isinya atau undefined
+      /* Optional chaining(3.41) atau operator tanda tanya (?) merupakan operator yang digunakan untuk mengamankan ketika kita ingin mengakses property sebuah object dari data nullish.Jika kita mencobba mengakses property dari sebuah object dari data nullish tanpa menggunakan optional chaining operator,maka akan terajdi eror. */
+      // contoh eror mengakses property nullish
+      //let orang2 = {}
+      //document.writeln.(`<p>${orang2.namaa1}</p>`) // ini hasilnya bakal blank/eror karena di orang2 tidak ada isinya/undefined.
+      const orang10 = {
+        address: "Boyolali",
+        alamat: "Manggung",
+      };
+      document.writeln(`<p>${orang10.address}</p>`); // ini bisa karena emang ada isinya
+      // contoh penggunaan optional chaining,lumayan mumet wkwkkw
+      let orang3 = {};
+      document.writeln(`<p>${orang3?.alamat?.negara}</p>`); // ini alurnya program akan mengecek terlebih dahulu apakah di orang3 itu nullish (undefined/null),jika bukan maka akan lanjut mengeksekusi selanjutnya yaitu alamat,jika alamat bukan nulis maka akan melanjutkan eksekusi ke negara. itu hasilnya nullish (undefined/null) karena di orang3 memang tidak ada isinya/undefined.jika ada maka akan melanjutkan eksekusi.
+      /* falsy dan truthy (3.49).
+    falsy atau kadang ditulis falsey adalah value yang ketika dalam konteks boolean dia dianggap false.ini adalah salah satu fitur unik dari javascript yang berguna namun kadang juga sering membingungkan.jadi di JavaScript kondisi itu tidak hanya bisa boolean,tapi diluar boolean pun bisa,namun kita harus tahu beberapa data falsy atau dianggap false.
+    DATA FALSY/DATA YANG DI ANGGAP FALSY 
+    False = boolean false
+    0.-0 = Number 0 dan -0 dianggap false
+    "".'',`` = semua string kosong dianggap false
+    null = null dianggap false
+    undefined = undefined dianggap false
+    NaN = Not a Number dianggap false 
+    Truthy adalah kebalikan dari falsy,dimana datanya dianggap bernilai true.intinya data yang bukan falsy adalah truthy. */
+      const data5 = ""; // Hasilnya false karena string kosong,misal waalaupun di isi "false" maka hasilnya tetep true karena bukan string kosong/truthy
+      if (data5) {
+        document.writeln("TRUE");
+      } else {
+        document.writeln("FALSE");
+      }
+      /* operator logika di non boolean. Sebelumnya kita sudah tau bahwa operator logika AND(&&) dan OR(||) digunakan untuk data boolean.Namun berbeda di JS,Kita bisa menggunakan operator logika AND dan OR untuk tipe data non boolean. 
+    OPERATOR LOGIKA OR(||)DI NON BOOLEAN
+    Operator logika OR membaca dari kiri ke kanan.
+    operator ini akan mengambil nilai pertama yang truthy.
+    jika tidak ada satupun yang bernilai truthy,maka yang terakhir akan diambil.*/
+      // contoh penggunaan operator OR
+      console.info("Hello" || ""); // hasilnya hello,karena hello bernilai truthy
+      console.info("" || []); // hasilnya [] karena array bernilai truthy
+      console.info("0" || "NOL"); // hasilnya 0 karena bernilai truthy pertama
+      console.info(0 || -0); // hasilnya -0 karena tidak ada yang truthy maka diambil yang terakhir
+      console.info(null || "Null"); // hasilnya Null karena truthy (bukan string kosong)
+      console.info(undefined || "UNDEFINED"); // Hasilnya UNDEFINED karena truthy
+      const namaorang = {
+        firstName: "Ardya",
+        lastName: "Zero",
+      };
+      const namaorang1 = namaorang.firstName || person.lastName;
+      console.info(namaorang1); // hasilnya Ardya karena bernilai truthy pertama,misal di first name diisi string kosong,maka yang diambil yg lastname.
+      /* OPERATOR LOGIKA NON BOOLEAN AND(&&)
+    Operator AND membaca dari kiri kekanan.Operator AND akan mengambil data pertama yang falsy(kebalikannya).jika tidak ada satupun nilai yang falsy maka yang terakhir yang diambil */
+      // contoh penggunaannnya
+      console.info("Hello" && ""); // hasilnya kosong/string kosong,karena string kosong bernilai false
+      console.info("" && []); // hasilny strng kosong karena bernilai falsy
+      console.info("0" && "NOL"); // hasilnya NOL karena tidak ada yang falsy maka diambil yang terakhir
+      console.info(0 && -0); // hasilnya 0 karena falsy pertama
+      console.info(null && "Null"); // hasilnya null karena falsy pertama
+      console.info(undefined && "UNDEFINED"); // Hasilnya undefined karena falsy pertama
+      /* For Loop (4.06).For adalah salah satu kunci yang bisa digunakan untuk melakukan perulangan.Blok kode yang terdapat di dalam for akan selalu diulangi sselama kondisi for terpenuhi.
+    sintak perulangan for
+    for(init statement;kondisi;post statement){
+    // block perulangan
+    }
+    init statement akan dieksekusi hanya sekali diawal sebelum perulangan.
+    kondisi akan dilakukan pengecekan dalam setiap perulangan,jika true maka perulangan akan dilakukan,jika false maka perulangan akan berhenti.
+    post statement akan dieksekusi setiap kali diakhir perulangan.
+    init statement ,kondisi dan post statement tidak wajib diisi,jika kondisi tidak diisi berarti kondisi selalu bernilai true. */
+      // constoh perulangan tidak berhenti-henti
+      /* for (; ;) {
+       alert("for loop") 
+    } ini hasilnya bakal muncul terus alertnya */
+      // kode perulangan dengan kondisi
+      let counter = 1; // for nya dibaca = kondisi akan selalu true asalkan nilai masih dibawah/sama dengan 10,jadi misal kalau counter <==100 maka akan terus melakukan perulangan sampai dengan 100
+      for (; counter <= 10; ) {
+        document.writeln(`<p>perulangan ke ${counter}</p>`);
+        counter++; // ini untuk menaikan nilai,misal 1 ke 10 gitu biar kondisinya tidak sama terus menerus.
+      } // hasilnya sampai 10 karena kondisi sampai 10 = true,intinya akan terus dilakukan perulangan sampai kondisi false.
+      // kode perulangan dengan init statements
+      for (let counter1 = 1; counter1 <= 5; ) {
+        document.writeln(`<p>Nomer ${counter1}</p>`);
+        counter1++;
+      }
+      // contoh kode perulangan komplit
+      for (let hitung = 6; hitung <= 10; hitung++) {
+        document.writeln(`<p>Number ${hitung}</p>`);
+      }
+      /* While Loop. adalah versi perulangan yang lebih sederhana dibanding for loop.Di while loop hanya terdapat kondisi perulangan,tanpa ada init statement dan post statement. */
+      let hitung1 = 1;
+      while (hitung1 <= 5) {
+        document.writeln(`<p>Nomor ${hitung1}</p>`);
+        hitung1++;
+      }
+      /* Do WHile Loop adalah perulangan yang mirip dengan While.perbedaanya hanya pada pengecekan kondisi.Pengecekan kondisi di while loop dilakukan diawal sebelum perulangan dilakukan,sedangkan di do while loop dilakukan setelah perulangan dilakukan.oleh karena it dalam do while loop minimal pasti sekali perulangan walaupun kondisi tidak true */
+      let hitung2 = 100; //ini false tapi tetep muncul karena pengecekan di akhir,misal ini saya kasih tru misal 1 maka hasilnya akan sama seperti while,akan mengitung 1-10
+      do {
+        document.writeln(`<p>Nomor ${hitung2}</p>`);
+        hitung2++;
+      } while (hitung2 <= 10); // jika di eksekusi di while doang nilai 100 tidak akan mucul karena bernilai false/lebih dari 10
+      /* Break dan Continue.
+    pada switch statements kita sudah mengenal kata kunci break yaitu unutk menghentikan case dalam switch.sama dengan perulangan break juga digunakan untuk menghentikan sebuah perulangan.Namun berbeda dengan continue,continue digunakan untuk menghentikan program perulangan saat ini,lalu melanjutkan ke perulangan selanjutnya. */
+      let menghitung = 1;
+      while (true) {
+        document.writeln(`<p>Perulangan Ke ${menghitung}</p>`);
+        menghitung++;
+        if (menghitung > 10) {
+          break;
+        }
+      } // while (true) itu berarti akan terus menerus melakukan looping/perulangan tanpa berhenti.di case ini berhenti karena perintah if jika variabel menghitung sudah lebih dari 10 maka akan berhenti/break
+      // contoh penggunaan continue ribet bgt ajg
+      for (let angka = 1; angka <= 20; angka++) {
+        if (angka % 2 === 0) {
+          continue;
+        }
+        document.writeln(`<p>Perulangan Ganjil ${angka}</p>`);
+      } // itu dibaca jika variabel angka habis dibagi 2 (angka genap) maka di abaikan dan lanjut eksekusi ke bilangan selanjutnya/bilangan ganjil
+      /* For In (4.32).For In merupakan perulangan for yang digunakan untuk mengiterasi seluruh data properti di object atau index array.
+    Walaupun For In bisa digunakan untuk Array,namun tidak direkomendasikan untuk array karena biasanya kita jarang sekali butuh data index untuk array,kita bisa menggunakan For Of(yang dibahas setelah ini) */
+      const orangnama = {
+        Nama: "Ardya",
+        Tengah: "Zero",
+        Akhir: "Kizaru",
+      };
+      for (const property in orangnama) {
+        document.writeln(`<p>${property}</p>`);
+        document.writeln(`<p>${property} : ${orangnama[property]}</p>`); // misal ingin mengambil sekalian valueny
+      } // ya hasilnya emang bergitu karena yang diambil cuman propertinya/variabel,bukan value/isinya.
+      /* For Of. jika for in digunakan untuk melakukan iterasi property atau index,berbeda dengan for of ini yang digunakan untuk melakukan oterasi terhadap isi value dari iterasi object seperti array string dan lain lain.For Of tidak bisa digunalan untuk melakukan iterasi data di Object karena object bukanlah iterable. */
+      const nameles = ["Ardya", "Zero", "Kizaru"];
+      for (const nama of nameles) {
+        document.writeln(`<p>${nama}</p>`);
+      } // intinya mengambil value dari array
+      const fullnama = "Ardya Zero";
+      for (const character of fullnama) {
+        document.writeln(`<p>${character}</p>`);
+      }
+      /* with statements (4.42).WIth statements merupakan fitur yang digunakan untuk menurunkan sebuah scope data.Dengan with statements kita bisa mengakses properti dalam sebuah data tanpa harus menyebut datanya. */
+      // perbedaan dengan with dan tanpa with
+      // kode tanpa with statements
+      const boneka = {
+        FirstName: "Lelouch",
+        MiddleName: "Vi",
+        LastName: "Brittania",
+      };
+      console.log(boneka.FirstName);
+      console.log(boneka.MiddleName);
+      console.log(boneka.LastName);
+      // kode menggunakan with statements
+      with (boneka) {
+        console.log(FirstName);
+        console.log(MiddleName);
+        console.log(LastName);
+      } // hasilnya sama tapi lebih simple. (tidak direkomendasikan) karena kadang membuat sebuah kode menjadi ambigu (4.46)
+      /* Function (4.49).Function adalah blok kode program yang akan berjalan saat kita panggil.Sebelumnya kita sudah menggunakan function writeln() untuk menampilkan tulisan html.
+    untuk membuat function kita bisa menggunakan kata kunci function lalu diikuti dengan nama function,kurung() dan diakhiri dengan block kurung {}.
+    kita bisa memanggil function dengan menggunakan nama function lalu diikuti dengan kurung ().
+    dibahasa pemrogramman lain,function juga diesbut dengan method. */
+      // membuat function
+      function sayHelloWorld() {
+        document.writeln("<p> Hello World</p>"); // ini bisa bebas kode program apapun
+      } // selagi tidak dipanggil function tidak akan dieksekusi
+      // memanggil function
+      sayHelloWorld();
+      sayHelloWorld(); // Bisa berkali-kali
+      /* Function Parameter(4.56).Kita bisa mengirim informasi ke function yang ingin kita panggil.
+    Untuk melakukan hal tersebut kita perlu menambhakan parameter atau argument di function yang sudah kita buat.
+    Parameter ditempatkan didalam kurung () di deklarasi method.
+    Parameter bisa lebih dari satu,jika lebih dari satu harus di[isah dengan tanda koma. */
+      // membuat function dengan parameter
+      function sayKont(namapendek, namapanjang) {
+        document.writeln(
+          `<p> Hello ${namapendek}  ${namapanjang},Bagaimana harimu?</p>`
+        );
+      }
+      // memanggil function dengan parameter.
+      sayKont("Lelouch", "Vi Brittania");
+      sayKont("Ardya", "Zero");
+      function speech(Namanya, Dialognya) {
+        document.writeln(`<p> ${Namanya} : ${Dialognya}</p>`);
+      }
+      speech(
+        "LelouchV",
+        "I Am Lelouch Vi Brittania Commands you! Obey Me Subject! Obey Me World!"
+      );
+      function dialog() {
+        document.writeln(
+          "<p>Lelouch Vi Brittania: I Am Lelouch Vi Brittania Commands you! Obey Me Subject! Obey Me World!</p>"
+        );
+      }
+      dialog();
+      /* Function Return Value(5.01). Secara default function itu tidak menghasilkan value apapun,namun jika kita ingin kita bisa membuat sebuah function mengembalikan value.
+    Agar function bisa menghasilkan value kita bisa menggunakan kata kunci return di dalam functionnya.Dan di dalamm blok function untuk menghasilkan nilai tersebut kita harus menggunakan kata kunci return lalu diikuti dengan data yang ingin kita hasilkan.
+    Function hanya bisa mengembalikan satu data,jika kita ingin mengembalikan beberapa data sekaligus,kita bisa menggunakan array sebagi return valuenya. */
+      // membuatfunction dengan parameter dan return value
+      function sayHello(FirstName, LastName) {
+        const say = `Hello ${FirstName} ${LastName}`;
+        return say;
+      } // hati hati parameter didalam function jangan ada yg sama,hanya yg didalam parameter saja,kalau sama dengan variabel diluar parameter tidak apa apa
+      // memanggil function dan menangkap return valuenya
+      const hasilfunc = sayHello("Zero", "Two");
+      document.writeln(`<p> ${hasilfunc} </p>`);
+      function sayHelloZ(FirstName, LastName) {
+        const say = `Hello ${FirstName} ${LastName}`;
+        return say;
+      }
+      const hasilfunct = sayHello("Kizaru", "Two");
+      document.writeln(`<p> ${hasilfunct} </p>`);
+      // kode function return value lebih dari satu
+      function getFinalScore(value) {
+        if (value > 90) {
+          return "A";
+        } else if (value > 80) {
+          return "B";
+        } else if (value > 70) {
+          return "C";
+        } else {
+          return "Tidak Lolos";
+        }
+      }
+      const finalScore = getFinalScore("60");
+      document.writeln(`<p>${finalScore}</p>`);
+      // EKSPERIMEN AJA
+      function getNilaiAkhir(Name, value) {
+        let ucapan;
+        if (value > 90) {
+          ucapan = "A";
+        } else if (value > 80) {
+          ucapan = "B";
+        } else if (value > 72) {
+          ucapan = "C";
+        } else {
+          ucapan = "REMIDIAL";
+        }
+        document.writeln(
+          `<p> Selamat ${Name} Nilai Ujian Kamu Adalah ${ucapan} Semangat!! </p>`
+        );
+      }
+      getNilaiAkhir("Kizaru", "92");
+      getNilaiAkhir("Ardya", "75");
+      /* Menghentikan eksekusi dengan Return 
+    Saat kita menggunakan kata kunci return,maka kode setelah return tersebut tidak akan dieksekusi.
+    Kita bisa menggunakan return untuk menghentikan sebuah function. (5.10) */
+      function apakahAda(array, searchValue) {
+        for (const element of array) {
+          if (element === searchValue) {
+            return true;
+          }
+        }
+        return false;
+      } // ini dibacanya kita mencari searchvalue di array (dan disimpan divariabel element),jika ada maka true dan kebawahnya tidak akan dieksekusi,jika tidak maka false
+      const arrayZ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]; // isi arraynya
+      const search = 10; // data yg kita cari/searchvalue
+      const found = apakahAda(arrayZ, search); // kode untuk memanggil,pakai arrayZ karena const nya arrayZ,tidak papa tidak sama dengan parameter
+      document.writeln(`<p>${found}</p>`);
+      // bisa juga dengan yg lebih simple
+      console.info(apakahAda([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 9)); // ingat [] itu array
+      const temukan = apakahAda([1, 2, 3, 44, 5, 66], 44);
+      document.writeln(`<p>${temukan}</p>`); //lebih simple daripada harus membuat banyak variabel
+      /* Optional parameter(5.16). Secara default parameter di function itu optional,artinya kita tidak wajib mengisi valuenya ketika memanggil function.Jika tidak ada value yang kita kirim ke parameter ketika memanggil function maka secara otomatis function tersebut bernilai undefined. */
+      // kode optional parameter
+      function namaClient(FirstName, MiddleName, lastName) {
+        console.info(FirstName);
+        console.info(MiddleName);
+        console.info(lastName);
+      }
+      namaClient("Zero"); // tidak terjadi eror,dan yg middlename dan lastname jadi undefined
+      /* Default Parameter.Sekarang kita tahu bahwa parameter itu optional artinya kita bisa tidak memberi value pada parameter.parameter juga bisa kita beri default value,artinya jika ketika kita tidak mengirim data ke parameter atau kita mengirim data undefined maka secara otomatis akan diisi oleh default value */
+      function register(Name, Gender = "UNKNOWN") {
+        console.log(Name);
+        console.log(Gender);
+      }
+      register("Kizaru", "Male");
+      register("Zero");
+      register("Lelouch", undefined);
+      register(); // hasilnya undefined dan unknown
+      /* REST PARAMETER (5.25).Rest parameter adalah fitur dimana kita bisa mengirim data sebanyak banyaknya pada satu parameter dan secara otomatis akan dikonversi menjadi array.
+    Untuk membuat rest parameter ada ketentuannya.Rest parameter hanya boleh ada satu di function,artinya tidak boleh lebih dari satu (dalam satu function).Rest parameter hanya boleh berada diposisi paling akhir,tidak boleh didepan atau ditengah,kecuali memang cuma ada 1 parameter.Di bahasa pemrograman lain ada jga yg bilang ini adalah variable argument. */
+      function jumlahBuah(name, ...data) {
+        let total = 0;
+        for (const item of data) {
+          total += item;
+        }
+        document.writeln(`<p>Total ${name} is ${total}</p>`);
+      }
+      jumlahBuah("Jeruk", 2, 3, 4, 5, 3, 2);
+      jumlahBuah("Mangga", 10, 12, 20, 12, -20);
+      /* Spread Syntax(5.31).Kadang kita terlanjur memiliki data berupa Array.tapi untungnya kita juga bisa mengirim array ke rest parameter.kita bisa menggunakan ...(titik tiga kali) diikuti dengan arraynya ketika memanggil function.Fitur ini dinamakan spread syntax */
+      //contoh test memasukan array kedalam rest parameter (array)
+      const values = [10, 10, 10, 10];
+      jumlahBuah("Test", values); // hasilnya tidak sesuai yang kita inginkan
+      jumlahBuah("Test", ...values); // nah hasilnya benar,jadi sebelum memasukan array baru kedalam sebuah rest parameter yg sudah memiliki data array sebelumnya,gunakan spread syntax
+      /* Function sebagai value (5.38). Function tidak hanya bisa digunakan sebagai kode program yang dieksekusi,tetapi juga bisa digunakan sebagai value.
+    Artinya function bisa disimpan divariable bisa juga dikirim melalui parameter ke function lainnya. */
+      function sayHai(name) {
+        document.writeln(`<p> Hai ${name},bagaimana harimu?`);
+      }
+      let say = sayHai;
+      sayHai("Zero");
+      say("Kizaru"); // hasilnya sama aja
+      // contoh function diparameter
+      function giveName(callback) {
+        callback("Zero");
+      } // harus sama dengan parameter
+      giveName(sayHai);
+      giveName(say);
+      /* Anonymous Function (5.44). Sebelumnya kita selalu membuat function dengan nama,kita juga bisa membuat sebuah function tanpa nama function,atau istilahnya anonymous function.Kita bisa membuat anonymous function dalam sebuah variable atau bisa juga kita buat ketika mengisi parameter. bisa digunakan ketika function itu sendiri tidak ribet/simple */
+      let sayhi = function (name) {
+        document.writeln(`<p> Hai ${name}</p>`);
+      };
+      sayhi("ARDYA");
+      giveName(function (name) {
+        document.writeln(`<p> Hello ${name}</p>`);
+      }); // rodok mumett sumpah,menurutku tidak disarankan wawkoakoakwa
+      /* Function dalam Function (5.51). tidak ada batasan dimana kita bisa membuat function.termasuk jika kita ingin membuat function dalam sebuah function,kita bisa melakukannya.Function yang terdapat didalam kita sebut inner function.Inner function hanya bisa diakses ditempat kita membuat functionnnya tidak bisa diakses diluar function.*/
+      function outer() {
+        function inner(name) {
+          document.writeln(`<p> Apa kabarmu ${name}?</p>`);
+        }
+        inner("Noelle"); // hanya bisa diakses didalam function ini saja(outer)
+        inner("Diluc");
+      }
+      outer();
+      //inner("Zero") eror / tidak muncul ya karena diluar function
+      /* Scope (5.54). Scope merupakan area akses sebuah data.
+    Ada dua jenis scope yaitu global scope dan lokal scope.
+    setiap kita membuat function maka kita akan membuat local scope untuk function tersebut.Data di global scope bisa diakses dari lokal scope,namun data dilokal scope hanya bisa diakses di lokal scope tersebut atau discope local dibawahnya (dalam kasus function dalam function). */
+      // contoh global scope
+      let counters = 0; // intinya variabel/func yg berada diluar,atau tidak didalam sebuah kurung kurawal {}
+      function hitMe() {
+        // nah didalam kurung kurawal ini/didalam sebuah variabel/function ini dinamakan lokal scope
+        counters++; // nah disini kita bisa akses counters karena merupakan sebuah global scope
+      }
+      hitMe();
+      hitMe(); // kita panggil 2 kali berarti nilainya kita naikan 2x hasilnya 2
+      console.info(counters);
+      // local scope
+      function first() {
+        let firstVariable = "First"; // lokal scope
+      }
+      function second() {
+        let secondVariable = "Second";
+      }
+      // Nested function scope (6.03)
+      function nestedVar() {
+        let first1Variable = "First1";
+        function second2() {
+          console.info(first1Variable); // nah kalau ini bisa
+        }
+        second2(); //harus dipanggil disni jga
+      }
+      nestedVar(); // nah hasilnya muncul
+      /* Recursive Function (6.06). Recursive function adalah kemampuan function memanggil dirinya sendiri.Kadang memang ada banyak problem yang mlebih mudah diselesaikan dengan menggunakan recursive function seperti contohnya kasus factorial. */
+      // contoh studi kasus factorial loop yanpa recursive
+      function factorial(value) {
+        let jumlah = 1;
+        for (let i = 1; i <= value; i++) {
+          jumlah *= i;
+        }
+        return jumlah;
+      } // ini pemfaktoran,jika kita masukan value 5 maka hasilnya akan 1x2x3x4x5,misal 10 jga 1x2x3x4....x10
+      console.info(factorial(5));
+      // contoh studi kasus factorial loop dengan recursive
+      function factorialRecursive(value) {
+        if (value === 1) {
+          return 1;
+        } else {
+          return value * factorialRecursive(value - 1);
+        }
+      }
+      console.info(factorialRecursive(10));
+      let hui = factorialRecursive(7);
+      document.writeln(`<p>${hui}</p>`);
+      /* Function Generator (6.15). Function generator adalah function yang digunakan untuk membuat data generator.
+    Generator adalah data yang bisa di iterasi seperti array.Untuk membuat function generator kita perlu mengggunakan tanda * (bintang) setelah kata function.Dan untuk mengembalikan data di tiap iterasi kita bisa gunakan kata kunci yield diikuti datanya */
+      function* createNames() {
+        yield "Zero";
+        yield "Kizaru";
+      }
+      console.info(createNames()); // hasilnya tidak keluar dan muncul generator
+      const createnama = createNames();
+      for (const simpannama of createnama) {
+        console.log(simpannama);
+      } // hasilnya seperti array
+      // contoh studi kasus function generator yang lebih kompleks (6.18)
+      function* buatGanjil(value) {
+        for (let i = 1; i <= value; i++)
+          if (i % 2 == 1) {
+            yield i;
+          }
+      }
+      const angkaGanjil = buatGanjil(25);
+      for (const nomer of angkaGanjil) {
+        console.info(nomer);
+      }
+      /* Lazy Evaluation. Gnerator itu sifatnya lazy.Jadi artinya jika datanya belum kita ambil dari generator maka yield selanjutnya tidak akan dieksekusi (mumett cokkkk 6.23)*/
+      function* buatGenap(value) {
+        for (let i = 1; i <= value; i++) {
+          console.info(`perulangan ke ${i}`);
+          yield i;
+        }
+      }
+      const angkaGenap = buatGenap(20);
+      console.info(angkaGenap.next().value);
+      console.info(angkaGenap.next().value); // kalau pakai command ini datanya akan muncul 1x setiap kita panggil
+      /* Arrow Function (6.28).Arrow function adalah alternatif pembuatan function yang lebih sederhana dari function biasanya.Namun terdapat limitasi dan juga tidak bisa digunakan di semua situasi.
+    Di namakan arrow function karena menggunakan tanda ==> ( seperti panah).Berikut contoh beberapa kekurangan arrow function :
+    1.Tidak memiliki irut arguments object
+    2.tidak bisa menggunakan function generator.
+    3.Tidak bisa mengakses this ( yang nanti akan dibahas di function object)
+    4.Tidak bisa mengakses super(yang nanti akan dibahas di javascript object oriented programming)
+    Mirip seperti anonymous function,hanya bisa dibuat didalam sebuah variable */
+      const omong = (name) => {
+        const omg = `Hello ${name}`;
+        console.info(omg);
+      };
+      omong("Zero");
+      // Arrow function tanpa block.kita bisa membuat sebuah arrow function tanpa block syaratna jika isinya sederhana misal hanya satu baris.
+      // contoh
+      const omongHai = (name) => console.info(`Hello ${name}`);
+      omongHai("Kizaru");
+      /* Arrow function return value. Arrow function bisa mengembalikan value,sama seperti function biasanya.
+    jika menggunakan block maka kita perlu menggunakan kata kunci return,jika tidak menggunakan block kita tidak perlu menggunakan kata kunci return. */
+      // contoh perbedaan menggunakan block dan tidak
+      const tambah = (first, second) => {
+        return first * second;
+      };
+      console.info(tambah(100, 100));
+      // contoh tidak menggunakan block
+      const tambahan = (first, second) => first * second;
+      console.info(tambahan(100, 100)); // hasilnya sama aja
+      // Arrow function tanpa kurung parameter,ini berlaku jika hanya 1 parameter.
+      const sayOmg = (name) => console.info(`Hai ${name},apa kabarmu?`);
+      sayOmg("Ardya");
+      /* Kode Arrow Function sebagai Parameter.
+    karena arrow function seperti anonymous function jadi kita bisa menggunakan arrrow function sebagai parameter di function lain */
+      function giveMeName(panggil) {
+        panggil("Elaina");
+      }
+      // contoh anonymouse function
+      giveMeName(function (name) {
+        console.info(`Hello ${name}`);
+      });
+      // menggunakan arrow function
+      giveMeName((name) => console.info(`Hello ${name}`)); // hasilnya sama
+      /* Closure (6.40). Closure adalah kombinasi function  dan bundel referensi ke data disekitarnya.
+    Memang agak bingung,Kita sudah tau bahwa local scope tidak bisa diakses dari luar scope nya,Dengan kemampuan closure kita bisa membuat sebuah function di local scope dan referensi ke data di sekitar local scope tersebut,atau keluar scope nya. JARANG DIGUNAKAN MENDING SKIP DULU AWKAWKAOKWOKAOKWOWOKWOKWOAKWOAKWOAWOKOKOKOKWOKWOAKWOKWAOKWOAKWOAKOAKWOKWOKWOAKWOKWOKWOAKOWAKW*/
+      /* Object Method(6.47). Pada tipe data object kita sudah membahas tentang property di object.Kareba sebeneranya function juga merupakan salah satu tipe data,jadi function pun sebenarnya bisa ditambahkan sebagai property di object.
+    Cara pembuatannya pun sama dengan function sebagai value.
+    function di object kadang disebut juga dengan Object Method. */
+      const orangorang = {
+        name: "Kizaru",
+        sayHi: (name) => console.info(`Hallo ${name} sayangg`), // bisa juga pakai anonymous function kalau misal dibutuhkan parameter lebih dari satu
+      };
+      console.info(orangorang.name);
+      orangorang.sayHi("Zetaaa");
+      // kita juga bisa memasukkan sebuah function yg sudah ada ke dalam sebuah property object
+      function sayHaiii(name) {
+        document.writeln(`<p> Hallo ${name} sayanggggggggg </p>`);
+      }
+      const orangan = {
+        name: "Rexus",
+        sapa: sayHaiii,
+      };
+      orangan.sapa("Zeta");
+      // Menambah method ke object.
+      orangan.menyapa = function (name) {
+        document.writeln(`Hallo ${name},bagaimana harimu?`);
+      };
+      orangan.menyapa("Zeta");
+      /* Kata kunci This (6.52). Kata kunci this adlah referensi ke object milik siapa.
+    Tiap lokaso kata kunci this bisa berbeda beda referensi pemiliknya.
+    Dalam Object Method this merupakan referensi ke object oemilik functionnya.
+    di Global Scope this merupakan referensi ke global object (di browser biasanya window)
+    dalam function,this merupakan referensi ke global object.
+    di function dengan strict mode ( yang akan kita bahas nanti) this adalah undefined.
+    dalam event this merupakan referensi ke element yang menerima event ( dibahas dimateri object model) ( jarang digunakan,biasanya dipake di object method)*/
+      // THIS DI GLOBAL SCOPE
+      console.info(this); // hasilnya windows/ data browser
+      // THIS DI FUNCTION
+      function sample() {
+        console.info(this);
+      }
+      sample(); // hasilnya sama windows,sama juga kalau di nested function
+      // THIS DI OBJECT METHOD
+      const sampel = {
+        name: "Elaina",
+        panggilaja: function (name) {
+          // this disini merujuk ke variabel nya = sampel
+          console.info(`Hi ${name},My Name is ${this.name}`);
+        },
+      };
+      sampel.panggilaja("Zetaa");
+      sampel.panggilaja("Asta");
+      /* Arrow Function di Object.
+    Arrow function juga bisa kita gunakan sebagai object method
+    Namun oerlu diketahui Arrow Function tidak bisa digunakan untuk mengakses arguments object,Function generator,kata kunci this dan kata kunci super ( yang akan dibahas dalam materi JavaScript Object Oriented Programming)
+    jadi pastikan gunakan arrow function hanya memang ketika kita tidak butuh fitur fitru diatas.*/
+      const sampelArrow = {
+        name: "Elaina",
+        sayHi: (name) =>
+          console.info(`Haii ${name} sayangg,Namaku ${sampelArrow.name}`),
+      };
+      sampelArrow.sayHi("Kizaru");
+      /* Getter dan Setter (7.04).Getter dan Setter adalah kemampuan membuat function yang berbeda untuk mengambil data (Getter) dan mengubah data (Setter) pada sebuah property di Object.
+    Dengan menggunakan Getter dan Setter kita bisa melakukan hal apapun dalam function sebelum sebuah property diakses atau diubah misal menambah validasi validasi lain. */
+      // Contoh Getter
+      const sampelGet = {
+        name: "Vestia",
+        lastName: "Zeta",
+        get FullName10() {
+          return `${this.name} ${this.lastName}`;
+        },
+        // contoh setter
+        /*set FullName10(value){
+        console.info(`Ubah FullName10 menjadi ${value}`)   
+        } */
+        set FullName10(value) {
+          const sampleArray = value.split(" ");
+          this.name = sampleArray[0];
+          this.lastName = sampleArray[1];
+        },
+      };
+      console.info(`Hallo ${sampelGet.FullName10} sayangg`);
+      //sampelGet.FullName10 = "Vestia Zeta" // nah ini kalau untuk merubah,harus ada set dulu,kalau tidak ada set tidak bisa diubah secara langsung
+      sampelGet.FullName10 = "Vestia Zetaa";
+      console.table(sampelGet);
+      sampelGet.FullName10 = "Kobo Kanaeru";
+      console.table(sampelGet);
+      /* MASALAH VARIABLE VAR (7.12) MENDING NONTON MALES NGETIK WAKWOKAOWKA,INTINYA TIDAK DIREKOMENDASIKAN  */
+      /* DESTRUCTURING (7.19). ADAALAH SEBUAH FITUR YANG BISA DIGUNAKAN UNTUK MEMBONGKAR VALUE VALUE DI ARRAY ATAU OBJECT KE DALAM VARIABLE VARIABLE.
+    Fitur ini sangat mempermudah kita ketika ingin mengambil data dari array atau object tanpa harus melakukan pengambilan data satu persatu */
+      // Kode mengambil data di array satu persatu tanpa destructor
+      const dataName = ["Ardya", "Zero", "Kizaru"];
+      const nameaw = dataName[0];
+      const namet = dataName[1];
+      const nameak = dataName[2];
+
+      console.info(dataName[0]);
+      console.info(nameaw);
+      console.info(namet);
+      console.info(nameak);
+      // destructuring array
+      const dataNama = ["Kizaru", "Zero", "Lelouch", "Vi", "Brittania"];
+      const [name1, name2, name3, ...others] = dataNama;
+
+      console.info(name1);
+      console.info(name2);
+      console.info(name3);
+      console.info(others);
+      // mengambil data / destructuring di object
+      const hewan = {
+        hewan1: "Babi",
+        hewan2: "Sapi",
+        hewan3: "Singa",
+        hewan4: "Koala",
+        hewanBisa: {
+          melata: "Ular",
+          terbang: "Elang",
+          berenang: "Hiu",
+        },
+      };
+      // contoh mengambil data biasa
+      document.writeln(`<p> Halllo ${hewan.hewan4}</p>`);
+      document.writeln(`<p> Halllo ${hewan.hewanBisa.terbang}</p>`);
+      const hewaan = hewan.hewan3;
+      document.writeln(`<p>${hewaan}</p>`);
+      // contoh dengan destructuring object,kita panggil nama propertinya harus sesuai/sama,berbeda dengan diatas yg kita bebas membuat variable
+      const daftarHewan = ({
+        hewan01,
+        hewan2,
+        hewan3,
+        hewanBisa: { melata, terbang, berenang },
+      } = hewan);
+      console.info(hewan01); // contoh yg salah,di destructur (variabel daftarHewan) yg hewan01 berbeda dengan propertinya,jadi hasilnya tidak muncul
+      console.info(hewan2);
+      console.info(berenang);
+      // destructuring untuk function parameter,kita juga bisa melakukan destructuring dalam sebuah function,hal ini membuat kita mudah ketika ingin mengambil nested data dalam array atau object dalam function
+      function displayPerson({ mane1, mane2, mane3 }) {
+        console.info(mane1);
+        console.info(mane2);
+        console.info(mane3);
+      }
+      const disPer = {
+        mane1: "Lelouch",
+        mane2: "Vi",
+        mane3: "Brittania",
+      };
+      displayPerson(disPer);
+      // destructuring function parameter pt2
+      function jml(first, second) {
+        return first * second;
+      }
+      console.info(jml(10, 10)); // cara biasa
+
+      function jmah(array) {
+        return array[0] + array[1];
+      }
+      console.info(jmah([10, 20])); // cara biasa function array
+
+      function jmlh([first, second]) {
+        return first + second;
+      }
+      console.info(jmlh([10, 10]));
+      console.info(jmlh([10, 50])); // dengan destructuring
+      /* Default Value. Yang paling menarik di destructuring adalah kita bisa menambahkan default value.Jadi misal kita melakukan destructuring terhadap array,ternyata tidak ada datanya maka kita bisa menambahkan default value.
+    Begitu juga dengan object jika ternyata property nya tidak ada maka kita bisa menambahkan sebuah default value. */
+      // contoh default value destructuring array
+      const displayName = ["Kizaru", "Zero"];
+      const [firstN, MiddleN, lastN = "Brittania"] = displayName;
+      document.writeln(`<p>${firstN}</p>`);
+      document.writeln(`<p>${MiddleN}</p>`);
+      document.writeln(`<p>${lastN}</p>`);
+      /* Menggunakan Nama Variable lain (7.37).Saat melakukan destructuring di Array kita bisa dengan mudah membuat nama variable sesuka kita.Namun pada saat melakukan destructuring di property kita harus menggunakan nama variable/property yang sama dengan property asilnya.
+    Kita juga bisa menggunakan nama variable lain saat melakukan destructuring object jika kita mau (mending jangan). */
+      /* Strict Mode (7.39).
+    Saat kita menjalankan kode program javaScript secara default kode program berjalan dalam mode tidak strict atau istilahnya sloppy mode.
+    Pada ECMAScriot 5 diperkenalkan mode strict dimana ketika stict mode dijalankan maka akan merubah beberapa cara kerja di JavaScript seperti :
+    1.Merubah beberapa JS eror dari yang tadinya silent eror menjadi throw error(terlihat)
+    2.Memperbaiki beberapa kesalahan engine di JavaScript untuk optimalisasi.
+    3.Menolak beberoa kode perintah yang kedepannya akan digunakan di ECMAScript.
+    untuk menyalakan strict mode sangat mudah yaitu kita bisa menambahkan `use strict` pada baris awal file javascript kita
+    atau bisa juga ditambahkan diawal function kita */
+      /* DEBUGGER (7.46).Debugger digunakan untuk melakukan proses debugging.Debugging adalah proses mencari bug(masalah) yang biasa terjadi di kode program kita.
+    Dengan debugger kita bisa menghentikan kode program diposisi yang kita inginkan ( breakpoint ),lalu melihat semua isi variable yang ada pada saat kode program sedang berhenti. */
+      function databaseName(FirstName, MiddleName, lastName) {
+        debugger; // hanya untuk memberhentikan eksekusi,jika kita klik resume baru eksekusi akan dilanjutkan (pause)
+        const fullnamee = `${FirstName} ${MiddleName} ${lastName}`;
+        return fullnamee;
+      }
+      const dataNames = databaseName("Lelouch", "Vi", "Brittania");
+      console.info(dataNames);
+      document.writeln(`ha sayang`);
+    </script>
+  </body>
+</html>

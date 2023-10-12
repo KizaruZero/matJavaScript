@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EKSPERIMEN</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function sayHello(firstName,lastName) {
+        const say = `Hello ${firstName} ${lastName}`
+        return say
+    }
+    // memanggil function dan menangkap return valuenya
+    const hasilfunc = sayHello("Zero", "Two")
+    document.writeln(`<p> ${hasilfunc} </p>`)
+    function getFinalScore(Name,value){
+    	let ucapan
+    	if (value>90) {
+    		ucapan = "A"
+    	} else if (value>80) {
+    		ucapan = "B"
+    	} else if (value>70) {
+    		ucapan = "C"
+    	} else {
+    		ucapan = "Remidial"
+    	}
+    	document.writeln(`<p>Selamat ${Name} Nilai Ujian Anda Adalah ${ucapan}.Semangat!!</p>`)
+    }
+    getFinalScore("ZERO", "95")
+    function first(){
+    	let firstVariable = "First"
+
+    	function firstNested(){
+    		console.info(firstVariable)
+    	}
+    	firstNested()
+    }
+    first()
+    function factorial(value){
+        let jumlah = 1
+        for (let i = 1; i <= value; i++) {
+            jumlah *= i
+        }
+        return jumlah
+    }
+    console.info(factorial(5))
+    const person = {
+    	name: "Elaina",
+    	sayHi: name => console.info(`Hallo ${name} sayanggg`)
+    }
+    person.sayHi("Elaina")
+
+
+	</script>
+
+</body>
+</html>
